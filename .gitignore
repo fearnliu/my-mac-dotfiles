@@ -88,3 +88,7 @@
 ### thefuck
 !.config/thefuck
 !.config/thefuck/settings.py
+
+### zed
+!.config/zed
+!.config/zed/settings.json
