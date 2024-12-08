@@ -1,0 +1,124 @@
+{
+  "schemes" : [
+    {
+      "pointer" : {
+        "speed" : 0.0689655172413792768,
+        "acceleration" : 0.6875,
+        "disableAcceleration" : false
+      },
+      "buttons" : {
+        "universalBackForward" : true,
+        "mappings" : [
+          {
+            "button" : 2,
+            "option" : false,
+            "command" : false,
+            "shift" : false,
+            "control" : false,
+            "action" : "auto"
+          },
+          {
+            "option" : false,
+            "control" : false,
+            "button" : 3,
+            "shift" : false,
+            "action" : "mouse.button.back",
+            "command" : false
+          },
+          {
+            "button" : 4,
+            "option" : false,
+            "control" : false,
+            "command" : false,
+            "shift" : false,
+            "action" : "mouse.button.forward"
+          }
+        ]
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productName" : "Sanwa Mouse MA130",
+          "productID" : "0x8307",
+          "serialNumber" : "1.0.0",
+          "vendorID" : "0x93a"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "horizontal" : 1,
+          "vertical" : 4
+        },
+        "distance" : {
+          "horizontal" : 2,
+          "vertical" : "auto"
+        },
+        "speed" : {
+          "horizontal" : 0,
+          "vertical" : 2
+        },
+        "modifiers" : {
+          "control" : {
+            "type" : "auto"
+          },
+          "option" : {
+            "type" : "auto"
+          },
+          "shift" : {
+            "type" : "auto"
+          },
+          "command" : {
+            "type" : "auto"
+          }
+        }
+      }
+    },
+    {
+      "scrolling" : {
+        "distance" : {
+          "horizontal" : 2,
+          "vertical" : "auto"
+        },
+        "modifiers" : {
+          "option" : {
+            "type" : "auto"
+          },
+          "shift" : {
+            "type" : "auto"
+          },
+          "control" : {
+            "type" : "auto"
+          },
+          "command" : {
+            "type" : "auto"
+          }
+        },
+        "acceleration" : {
+          "horizontal" : 1,
+          "vertical" : 4
+        },
+        "speed" : {
+          "horizontal" : 0,
+          "vertical" : 32
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0.6875,
+        "speed" : 0.0689655172413792768,
+        "disableAcceleration" : false
+      },
+      "buttons" : {
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "productName" : "USB Receiver",
+          "category" : "mouse",
+          "productID" : "0xc52f"
+        }
+      }
+    }
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
+}

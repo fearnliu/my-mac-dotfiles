@@ -68,3 +68,7 @@
 ### lazygit
 !.config/lazygit
 !.config/lazygit/config.yml
+
+### linearmouse
+!.config/linearmouse
+!.config/linearmouse/linearmouse.json
