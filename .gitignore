@@ -49,6 +49,10 @@
 !.config/delta
 !.config/delta/themes.gitconfig
 
+### direnv
+!.config/direnv
+!.config/direnv/direnv.toml
+
 ### git
 !.config/git
 !.config/git/ignore

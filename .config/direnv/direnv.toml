@@ -1,0 +1,9 @@
+[global]
+load_dotenv = true
+
+[whitelist]
+prefix = [
+  "~/workspaces/playground",
+  "~/workspaces/repos/github.com/fearnliu",
+  "~/workspaces/repos/github.com/thingswise",
+]
