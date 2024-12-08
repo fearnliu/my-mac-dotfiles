@@ -72,3 +72,7 @@
 ### linearmouse
 !.config/linearmouse
 !.config/linearmouse/linearmouse.json
+
+### pip
+!.config/pip
+!.config/pip/pip.conf
