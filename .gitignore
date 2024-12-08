@@ -57,6 +57,10 @@
 !.config/fzf
 !.config/fzf/config.zsh
 
+### gh
+!.config/gh
+!.config/gh/config.yml
+
 ### git
 !.config/git
 !.config/git/ignore
