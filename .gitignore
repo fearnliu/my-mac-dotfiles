@@ -84,3 +84,7 @@
 ### starship
 !.config/starship
 !.config/starship/config.toml
+
+### thefuck
+!.config/thefuck
+!.config/thefuck/settings.py
