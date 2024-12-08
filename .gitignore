@@ -80,3 +80,7 @@
 ### pypoetry
 !.config/pypoetry
 !.config/pypoetry/config.toml
+
+### starship
+!.config/starship
+!.config/starship/config.toml
