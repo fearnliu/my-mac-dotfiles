@@ -19,6 +19,9 @@
 !.gnupg/gpg.conf
 !.gnupg/gpg-agent.conf
 
+## nodejs
+!.npmrc
+
 ## ssh
 !.ssh
 !.ssh/config
