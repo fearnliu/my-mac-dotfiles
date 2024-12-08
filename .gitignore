@@ -7,14 +7,15 @@
 !LICENSE
 !README.md
 
+!.gitconfig
 !.gitignore
+
+!.editorconfig
 
 !.zshenv
 !.zprofile
 !.zshrc
 !.zlogout
-
-!.gitconfig
 
 !.config
 
