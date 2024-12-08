@@ -76,3 +76,7 @@
 ### pip
 !.config/pip
 !.config/pip/pip.conf
+
+### pypoetry
+!.config/pypoetry
+!.config/pypoetry/config.toml
