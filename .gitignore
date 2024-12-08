@@ -53,6 +53,10 @@
 !.config/direnv
 !.config/direnv/direnv.toml
 
+### fzf
+!.config/fzf
+!.config/fzf/config.zsh
+
 ### git
 !.config/git
 !.config/git/ignore
