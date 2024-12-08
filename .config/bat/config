@@ -1,0 +1,11 @@
+--theme="ansi"
+
+--italic-text=always
+
+--map-syntax="*.conf:INI"
+--map-syntax="*ignore:Git Ignore"
+--map-syntax="**/.ssh/**/*config:SSH Config"
+
+--pager="less --RAW-CONTROL-CHARS --quit-if-one-screen --mouse"
+
+--style="auto"

@@ -41,8 +41,14 @@
 ## .config folder
 !.config
 
+### bat
+!.config/bat
+!.config/bat/config
+
+### delta
 !.config/delta
 !.config/delta/themes.gitconfig
 
+### git
 !.config/git
 !.config/git/ignore
