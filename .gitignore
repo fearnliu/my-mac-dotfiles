@@ -1,0 +1,10 @@
+# Ignore everythings in the $HOME folder
+*
+
+
+# Excluding
+
+!LICENSE
+!README.md
+
+!.gitignore
