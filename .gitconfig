@@ -1,0 +1,117 @@
+#################### Begin Delta ####################
+[include]
+  path = ~/.config/delta/themes.gitconfig
+
+[delta]
+  # zebra-dark utilise the moved colors
+  # by displaying them as a faint background color on the affected lines
+  # while keeping syntax highlighting as the foreground color.
+  features = mellow-barbet zebra-dark
+  hyperlinks = true
+  hyperlinks-file-link-format = "vscode://file/{path}:{line}"
+  line-numbers = true
+  navigate = true
+  relative-paths = true
+  side-by-side = true
+  syntax-theme = Dracula
+#################### End Delta ####################
+
+
+
+
+[core]
+  autocrlf = false
+  safecrlf = true
+  excludesfile = ~/.config/git/ignore
+  # Use delta as the core.pager
+  pager = delta
+
+
+[credential]
+  helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+  useHttpPath = true
+[credential "https://github.com"]
+  helper = !/usr/local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+  helper = !/usr/local/bin/gh auth git-credential
+
+
+[diff]
+  # activate the Git feature
+  # be able to detect moved blocks of code and style them differently from the usual removed/added lines
+  colorMoved = default
+  submodule = log
+  # Set difftastic as the default difftool, so we don't need to specify
+  # `-t difftastic` every time.
+  tool = difftastic
+[difftool]
+  # Run the difftool immediately, don't ask 'are you sure' each time.
+  prompt = false
+[difftool "difftastic"]
+  cmd = difft "$MERGED" "$LOCAL" "abcdef1" "100644" "$REMOTE" "abcdef2" "100644"
+[difftool "vscode"]
+  cmd = code --wait --diff "$LOCAL" "$REMOTE"
+
+
+[fetch]
+  prune = true
+
+
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+
+
+[gpg]
+  program = /usr/local/bin/gpg
+
+
+[init]
+  defaultBranch = main
+
+
+[interactive]
+  # Use delta as the interactive.diffFilter
+  diffFilter = delta --color-only
+
+
+[merge]
+  # With that setting, when a merge conflict is encountered,
+  # Git will display merge conflicts with the contents of the merge base as well.
+  # delta will then display this as two diffs, from the ancestor to each side of the conflict.
+  conflictstyle = zdiff3
+[mergetool]
+
+[mergetool "vscode"]
+  cmd = code --wait --merge "$REMOTE" "$LOCAL" "$BASE" "$MERGED"
+
+
+[pager]
+  # Use a pager if the difftool output is larger than one screenful,
+  # consistent with the behaviour of `git diff`.
+  difftool = true
+
+
+[pull]
+  rebase = true
+
+
+[push]
+  autoSetupRemote = true
+
+
+[status]
+  submoduleSummary = true
+
+
+[user]
+  email = 16191685+fearnliu@users.noreply.github.com
+  name = Fearn Liu
+  # useConfigOnly = true
+
+
+[includeIf "gitdir:~/workspaces/repos/github.com/"]
+  path = ~/workspaces/repos/github.com/github.gitconfig

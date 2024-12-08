@@ -13,3 +13,13 @@
 !.zprofile
 !.zshrc
 !.zlogout
+
+!.gitconfig
+
+!.config
+
+!.config/delta
+!.config/delta/themes.gitconfig
+
+!.config/git
+!.config/git/ignore
