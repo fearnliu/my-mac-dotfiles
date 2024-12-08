@@ -7,18 +7,30 @@
 !LICENSE
 !README.md
 
+## git
 !.gitconfig
 !.gitignore
 
+## editorconfig
 !.editorconfig
 
-!.zshenv
-!.zprofile
-!.zshrc
-!.zlogout
+## ssh
+!.ssh
+!.ssh/config
+!.ssh/hosts
+!.ssh/hosts/github.com
+!.ssh/hosts/github.com/config
 
+## vim
 !.vimrc
 
+## zsh shell
+!.zlogout
+!.zprofile
+!.zshenv
+!.zshrc
+
+## .config folder
 !.config
 
 !.config/delta
