@@ -65,6 +65,10 @@
 !.config/git
 !.config/git/ignore
 
+### iterm2
+!.config/iterm2
+!.config/iterm2/com.googlecode.iterm2.plist
+
 ### lazygit
 !.config/lazygit
 !.config/lazygit/config.yml
