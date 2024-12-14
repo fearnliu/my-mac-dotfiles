@@ -1,85 +1,91 @@
 {
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
   "schemes" : [
     {
       "pointer" : {
-        "speed" : 0.0689655172413792768,
         "acceleration" : 0.6875,
+        "speed" : 0.0689655172413792768,
         "disableAcceleration" : false
       },
       "buttons" : {
-        "universalBackForward" : true,
         "mappings" : [
           {
             "button" : 2,
             "option" : false,
+            "action" : "auto",
             "command" : false,
             "shift" : false,
-            "control" : false,
-            "action" : "auto"
+            "control" : false
           },
           {
-            "option" : false,
-            "control" : false,
-            "button" : 3,
             "shift" : false,
-            "action" : "mouse.button.back",
-            "command" : false
+            "option" : false,
+            "button" : 3,
+            "command" : false,
+            "control" : false,
+            "action" : "mouse.button.back"
           },
           {
+            "action" : "mouse.button.forward",
+            "command" : false,
+            "shift" : false,
             "button" : 4,
             "option" : false,
-            "control" : false,
-            "command" : false,
-            "shift" : false,
-            "action" : "mouse.button.forward"
+            "control" : false
           }
-        ]
+        ],
+        "universalBackForward" : true
       },
       "if" : {
         "device" : {
-          "category" : "mouse",
           "productName" : "Sanwa Mouse MA130",
+          "category" : "mouse",
           "productID" : "0x8307",
-          "serialNumber" : "1.0.0",
-          "vendorID" : "0x93a"
+          "vendorID" : "0x93a",
+          "serialNumber" : "1.0.0"
         }
       },
       "scrolling" : {
         "acceleration" : {
-          "horizontal" : 1,
-          "vertical" : 4
-        },
-        "distance" : {
-          "horizontal" : 2,
-          "vertical" : "auto"
-        },
-        "speed" : {
-          "horizontal" : 0,
-          "vertical" : 2
+          "vertical" : 2,
+          "horizontal" : 1
         },
         "modifiers" : {
-          "control" : {
-            "type" : "auto"
-          },
-          "option" : {
+          "command" : {
             "type" : "auto"
           },
           "shift" : {
             "type" : "auto"
           },
-          "command" : {
+          "control" : {
+            "type" : "auto"
+          },
+          "option" : {
             "type" : "auto"
           }
+        },
+        "speed" : 0,
+        "distance" : {
+          "vertical" : "auto",
+          "horizontal" : 1
         }
       }
     },
     {
       "scrolling" : {
+        "speed" : 0,
+        "acceleration" : {
+          "horizontal" : 1,
+          "vertical" : 2
+        },
         "distance" : {
-          "horizontal" : 2,
+          "horizontal" : 1,
           "vertical" : "auto"
         },
         "modifiers" : {
+          "command" : {
+            "type" : "auto"
+          },
           "option" : {
             "type" : "auto"
           },
@@ -88,37 +94,63 @@
           },
           "control" : {
             "type" : "auto"
-          },
-          "command" : {
-            "type" : "auto"
           }
-        },
-        "acceleration" : {
-          "horizontal" : 1,
-          "vertical" : 4
-        },
-        "speed" : {
-          "horizontal" : 0,
-          "vertical" : 32
         }
-      },
-      "pointer" : {
-        "acceleration" : 0.6875,
-        "speed" : 0.0689655172413792768,
-        "disableAcceleration" : false
-      },
-      "buttons" : {
-        "universalBackForward" : true
       },
       "if" : {
         "device" : {
-          "vendorID" : "0x46d",
+          "productID" : "0xc52f",
           "productName" : "USB Receiver",
-          "category" : "mouse",
-          "productID" : "0xc52f"
+          "vendorID" : "0x46d",
+          "category" : "mouse"
         }
+      },
+      "pointer" : {
+        "disableAcceleration" : false,
+        "speed" : 0.0689655172413792768,
+        "acceleration" : 0.6875
+      },
+      "buttons" : {
+        "universalBackForward" : true
+      }
+    },
+    {
+      "scrolling" : {
+        "acceleration" : 1,
+        "speed" : 0,
+        "distance" : "auto",
+        "modifiers" : {
+          "shift" : {
+            "type" : "auto"
+          },
+          "control" : {
+            "type" : "auto"
+          },
+          "command" : {
+            "type" : "auto"
+          },
+          "option" : {
+            "type" : "auto"
+          }
+        }
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x5ac",
+          "serialNumber" : "FM793670168J2KVA1+RRT",
+          "category" : "trackpad",
+          "productID" : "0x27c",
+          "productName" : "Apple Internal Keyboard \/ Trackpad"
+        }
+      },
+      "pointer" : {
+        "speed" : 0.0689655172413792768,
+        "disableAcceleration" : false,
+        "acceleration" : 0.6875
+      },
+      "buttons" : {
+        "universalBackForward" : false
       }
     }
-  ],
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
+  ]
 }
